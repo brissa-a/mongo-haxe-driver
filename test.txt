@@ -1,0 +1,1 @@
+{ monkey => null, options => { test => true, delay => 1.565, nested => [{ mining => -35, going => deeper }] }, _id => ObjectID("12aba7d16272693746050000"), hol => [10,2,20.5], title => My awesome post }

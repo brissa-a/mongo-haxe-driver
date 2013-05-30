@@ -1,0 +1,1 @@
+{ _id : ObjectID("12aba7d16272693746060000"), title : My awesome post, hol : [first,2,2013-05-30 21:40:02], options : { delay : 1.565, test : true, nested : [53,{ going : deeper, mining : -35}]}, monkey : null, $in : [1,3]}

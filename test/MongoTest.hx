@@ -14,7 +14,7 @@ class MongoTest extends TestCase
 		mongo = new Mongo();
 
 		db = mongo.testDriver;
-		posts = db.posts;
+		posts = db.blog.posts;
 		db.drop(); // clear stuff
 
 		// push posts into an array

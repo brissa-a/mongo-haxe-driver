@@ -1,12 +1,17 @@
 package org.mongodb;
 
-class Collection
+class Collection implements Dynamic<Collection>
 {
 	public function new(name:String, db:Database)
 	{
 		this.name = name;
 		this.fullname = db.name + "." + name;
 		this.db = db;
+	}
+
+	public function resolve(name:String):Collection
+	{
+		return new Collection(this.name + "." + name, this.db);
 	}
 
 	public inline function find(?query:Dynamic, ?returnFields:Dynamic, skip:Int = 0, number:Int = 0):Cursor
